@@ -5,7 +5,6 @@
 .ipynb_checkpoints/
 .DS_STORE
 *.Rproj
-*.ipynb
 src/*.o
 src/*.so
 src/*.dll
