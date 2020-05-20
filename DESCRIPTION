@@ -1,7 +1,7 @@
 Package: egccmop
 Type: Package
 Title: Elevator Group Control as a Constrained Multiobjective Optimization Problem
-Version: 1.0
+Version: 0.1.0
 Date: 2020-05-18
 Authors@R: person("Aljosa", "Vodopija", email = "aljosa.vodopija@ijs.si", role = c("aut", "cre"))
 Description: This package is a supplementary material to the paper: 
