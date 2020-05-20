@@ -95,6 +95,14 @@ opt <- function(config,
     stop("'no.runs' not an integer or no.runs not in [1,30]")
   }
   
+  if (method == "demo"){
+    if (is.null(control)) {
+      control <- list(mut.prob = 0.7)
+    } else {
+      control$mut.prob <- ifelse("mut.prob" %in% names(control), control$mut.prob, 0.7)
+    }
+  }
+  
   control <- list(no.cycles  = ifelse("no.cycles" %in% names(control), control$no.cycles, 1e4), 
                   pop.size   = ifelse("pop.size" %in% names(control), control$pop.size, 100), 
                   no.iters   = ifelse("no.iters" %in% names(control), control$no.iters, 100), 
@@ -156,7 +164,7 @@ compute_hv_stats <- function(pfs) {
 
 #' Making plots
 #' 
-#' This function meka a plot of the selected Pareto front approximation.
+#' This function makes a plot of the selected Pareto front approximation.
 #' 
 #' @param pfs A list of Pareto front approximations obtained by \code{opt} function.
 #' @param run An integer denoting which run to depict in the plot.  

@@ -15,5 +15,5 @@ make_plot(pfs, run = 1)
 A plot depicting Pareto front approximation of the selected run.
 }
 \description{
-This function meka a plot of the selected Pareto front approximation.
+This function makes a plot of the selected Pareto front approximation.
 }

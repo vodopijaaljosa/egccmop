@@ -15,7 +15,7 @@ For more details on this package see \url{https://github.com/vodopijaaljosa/egcc
 \tabular{ll}{
 Package: \tab egccmop\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 0.1.0\cr
 Date: \tab 2020-05-18\cr
 License: \tab GPL (>= 2)\cr
 }
