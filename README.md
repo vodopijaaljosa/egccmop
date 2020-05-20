@@ -1,6 +1,6 @@
 ## Elevator Group Control as a Constrained Multiobjective Optimization Problem
 
-**NOTE:** This Jupyter Notebook is a supplementary material to the paper:
+**NOTE:** This repo contains the supplementary material to the paper:
 
 > [1] A. Vodopija, J. Stork, T. Bartz-Beielstein, B. Filipič. Elevator group control as a constrained multiobjective optimization problem, *Applied Soft Computing*.
 
@@ -71,7 +71,7 @@ The first element of the output is the proportion of states with waiting custome
 
 
 ```R
-weights <- c(-0.8, -1, 0.8, -0.2, -0.9, 0, -0.4, 0.8, 1, 1, -0.2, -0.8, 1, -1, 0.8, -1)
+weights <- c(-0.8, -0.9, 0.6, -0.3, 0.9, 0.1, 0.6, 0.3, 1.0, -0.8, -0.5, 0.0, -0.1, 0.5, 0.7, 0.3)
 objs    <- sring(config    = config, 
                  weights   = weights,
                  no.cycles = 1e4)
