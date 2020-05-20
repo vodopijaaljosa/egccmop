@@ -67,7 +67,7 @@ The input parameters for the function performing the S-Ring simulations are:
 - `weights`: A vector of perceptron weights. Vector components take values from [-1,1].
 - `no.cycles`: An integer denoting the number of cycles used in the S-Ring simulation. It should take values from  [1e3,1e5]. Default is 1e4.
 
-The first element of the output is the proportion of states with waiting customers ($f_1$), the second the proportion of elevator stops ($f_2$), and the last one the maximal number of skips ($c$). For more details on objectives and constraints see Section 4 in [1]. 
+The first element of the output is the proportion of states with waiting customers (f1), the second the proportion of elevator stops (f2), and the last one the maximal number of skips (c). For more details on objectives and constraints see Section 4 in [1]. 
 
 
 ```R
@@ -88,7 +88,7 @@ First, let's select the values of control parameters, i.e., the algorithm parame
 - `pop.size`: An integer denoting the number of solutions used by the optimization algorithm. Default is 100.
 - `no.iters`: An integer denoting the number of iterations (generations) used by the optimization algorithm. Default is 100.
 - `cross.prob`: A float from [0,1] denoting the crossover probability. Default is 0.9. 
-- `mut.prob`: A float from [0,1] denoting the mutation probability. For DEMO this is the scaling factor ($F$). Default is 0.1 for NSGA-II and MOEA/D, while 0.7 for DEMO.
+- `mut.prob`: A float from [0,1] denoting the mutation probability. For DEMO this is the scaling factor (F). Default is 0.1 for NSGA-II and MOEA/D, while 0.7 for DEMO.
 - `no.cycles`: An integer denoting the number of cycles used in the S-Ring simulation. It should take values from  [1e3,1e5]. Default is 1e4.
 
 **NOTE:** Default values are used for unspecified parameters.  
