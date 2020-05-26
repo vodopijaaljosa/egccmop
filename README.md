@@ -117,7 +117,7 @@ The output of the function is a list of data frames storing the objective values
 
 ```R
 pfs <- opt(config  = config, 
-           method  = "nsga2", 
+           method  = "demo", 
            control = control,
            no.runs = 3)
 ```
