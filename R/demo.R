@@ -23,7 +23,7 @@ demo <- function(fn,
   for (i in 2:no.iter) {
     pop.x.new <- deRand1Bin(pop.x, lower, upper, scal.fac)
     pop.x.new <- crossover(pop.x.new, pop.x, cross.prob)
-    pop.y.new <- t(apply(pop.x, 1, fn))
+    pop.y.new <- t(apply(pop.x.new, 1, fn))
     
     sort <- nsga2CdSelection(pop.x, pop.y, pop.x.new, pop.y.new, no.cons = no.cons)
     pop.x <- sort$x

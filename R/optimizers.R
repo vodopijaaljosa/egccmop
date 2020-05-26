@@ -10,7 +10,10 @@ run_nsga2 <- function(config, control) {
   max.skips  <- 4 
   
   if (requireNamespace("memoise", quietly = TRUE)){
-    sring <- memoise::memoise(sring)
+    tryCatch({
+      sring <- memoise::memoise(sring)
+    }, error = function(err) {
+    })
   }
   
   objs <- function(w) sring(config, w, no.cycles)[c(1, 2)]
@@ -50,7 +53,10 @@ run_demo <- function(config, control) {
   max.skips  <- 4 
   
   if (requireNamespace("memoise", quietly = TRUE)){
-    sring <- memoise::memoise(sring)
+    tryCatch({
+      sring <- memoise::memoise(sring)
+    }, error = function(err) {
+    })
   }
   
   objs <- function(w) {
@@ -87,7 +93,10 @@ run_moead <- function(config, control, seed) {
   max.skips  <- 4 
   
   if (requireNamespace("memoise", quietly = TRUE)){
-    sring <- memoise::memoise(sring)
+    tryCatch({
+      sring <- memoise::memoise(sring)
+    }, error = function(err) {
+    })
   }
   
   fn.objs <- function(w) sring(config, w, no.cycles)[c(1, 2)]
