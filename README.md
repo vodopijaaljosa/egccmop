@@ -2,7 +2,7 @@
 
 **NOTE:** This repo contains the supplementary material to the paper:
 
-> [1] A. Vodopija, J. Stork, T. Bartz-Beielstein, B. Filipič. Elevator group control as a constrained multiobjective optimization problem, *Applied Soft Computing*.
+> [1] A. Vodopija, J. Stork, T. Bartz-Beielstein, B. Filipič. Elevator group control as a constrained multiobjective optimization problem, *Applied Soft Computing*, [doi:10.1016/j.asoc.2021.108277](https://doi.org/10.1016/j.asoc.2021.108277)
 
 It's recommended to read this paper for a better understanding of the following content.
 
